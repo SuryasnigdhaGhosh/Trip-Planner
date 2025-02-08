@@ -25,14 +25,14 @@ export const SelectNoOfPersons = [
         icon: "🚶",
         title: "Solo",
         desc: "Discovering on Your Own",
-        no: "1 Person(Solo)"
+        no: "Solo"
     },
     {
         id:2,
         icon: "💑",
         title: "Partner",
         desc: "Exploring with a Loved One",
-        no: "2 People(Couple)"
+        no: "Couple"
     },
     {
         id:3,
@@ -46,8 +46,8 @@ export const SelectNoOfPersons = [
         icon: "🤝",
         title: "Friends",
         desc: "Adventure with Your Crew",
-        no: "5 to 10 People(Friends)"
+        no: "4 to 10 People(Friends)"
     },
 ]
 
-export const AI_PROMPT = "Generate a Trip itinerary for {totalDays} days trip to  Location : {location} , for {traveller} , within a {budget} budget. List all hotels with HotelName , hotel address , price,  hotel image url, geo coordinates, rating , descriptions , and suggest the itinerary with placeName, place details, place image url, geo coordinates, ticket pricing, rating , time taken to travel for each location for {totalDays} days and  with each day plan suggest best time to visit , Remember all have to cover in the {budget} level budget. Important: give the result in JSON Format"
+export const AI_PROMPT = "Generate a Trip itinerary for {totalDays} days trip to  Location : {location} , for {traveller} , within a {budget} budget. List all hotels(at least 5) with HotelName , hotel address , price,  hotel image url, geo coordinates, rating , descriptions , and suggest the itinerary with placeName, place details, place image url, geo coordinates, ticket pricing, rating , time taken to travel for each location for {totalDays} days and  with each day plan suggest best time to visit and dont include departure in itinerary , Remember all have to cover in the {budget} level budget , also include transportationNotes, foodRecommendations and generalTips at the end for overall. Important: give the result in JSON Format"
