@@ -12,8 +12,8 @@ import ViewTrip from './view-trip/ViewTrip'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_AUTH_CLIENT_ID}>
-      <Navbar />
       <BrowserRouter >
+        <Navbar />
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/trip-planner" element={<TripPlanner />} />
